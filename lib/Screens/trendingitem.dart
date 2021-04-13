@@ -56,8 +56,9 @@ class _trendingitemState extends State<trendingitem> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text('${trendings.foodName}',style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w600,letterSpacing: 0.5),),
+                                SizedBox(height: 2.0,),
                                 Text('\$${trendings.foodPrice}', style: TextStyle(fontSize:16,color: Colors.red),),
-                                SizedBox(height: 15.0,),
+                                SizedBox(height: 13.0,),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: <Widget>[
