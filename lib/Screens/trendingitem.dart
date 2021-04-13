@@ -34,7 +34,8 @@ class _trendingitemState extends State<trendingitem> {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10.0),
-                    boxShadow: [BoxShadow(color: Colors.black12, offset: Offset(0.0,2.0),blurRadius: 2.0)]
+                    boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 4.0)]
+                    //boxShadow: [BoxShadow(color: Colors.black12, offset: Offset(0.0,2.0),blurRadius: 2.0)]
                 ),
                 child: Stack(
                     alignment: Alignment.topCenter,
@@ -55,7 +56,7 @@ class _trendingitemState extends State<trendingitem> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Text('${trendings.foodName}',style: TextStyle(fontSize: 20.0,fontWeight: FontWeight.w600,letterSpacing: 0.5),),
-                                Text('\$${trendings.foodPrice}', style: TextStyle(fontSize:16,color: Colors.grey[500]),),
+                                Text('\$${trendings.foodPrice}', style: TextStyle(fontSize:16,color: Colors.red),),
                                 SizedBox(height: 15.0,),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

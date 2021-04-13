@@ -32,7 +32,7 @@ class _featureditemState extends State<featureditem> {
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10.0),
-                boxShadow: [BoxShadow(color: Colors.black12, offset: Offset(0.0,2.0),blurRadius: 2.0)]
+                boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 4.0)]
             ),
             child: Stack(
               alignment: Alignment.topCenter,
@@ -62,7 +62,7 @@ class _featureditemState extends State<featureditem> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          Text('\$${featured.foodPrice}', style: TextStyle(fontSize:16,color: Colors.grey[500]),),
+                          Text('\$${featured.foodPrice}', style: TextStyle(fontSize:16,color: Colors.red),),
                           _buildRatingStars(featured.ratings),
                           //Text('${featured.ratings} of 5', style: TextStyle(fontSize:16,color: Colors.grey[500]),)
                         ],
